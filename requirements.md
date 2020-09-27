@@ -27,14 +27,17 @@ NFR or quality attributes requirements. Qualification of functional requirements
 NFR requirements processing plan is:
 - document NFR, most likely a customer won't provide it to you.
 - cross-check NFR with all key stakeholders
-- drive the discussion to try to sync up their visions if they are not in accordance with each other. 
+- drive the discussion to try to sync up their visions if they are not in accordance. 
 - find and discuss missed NFR with stakeholders
 
 # Constraints
-Document decision with zero degrees of freedom.
+Document decision with zero degrees of freedom. You have to accept them. At the same time, you should be unsure about them and double-check those constraints are reasonable enough.
 
 # Assumptions
-Functional requirements, non-functional requirements, constraints that SA creates and provide to cover gaps in all of the above.
+Functional requirements, non-functional requirements, constraints that SA creates and provide to cover gaps in all of the above. SA must proactively create them. *Assumptions will protect SA's decisions in the future by explicitly limiting the scope.* Formulate all gaps that are:
+- visible for you and sync up them with your stakeholders
+- can't be formulated by a customer
+- double-check that no any gaps anymore
 
 # The result
 All parts like Functional requirements, NFR, and Constraints will be filtered to choose only Architecture Significant Requirements (ASR). Please note that not all details listed above are important from an Architecture point of view. So please be careful. Later ASR will be sorted by priority and a customer may agree upon that some of them are not important in a particular application.
