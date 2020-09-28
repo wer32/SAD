@@ -43,3 +43,6 @@ Metrics:
 - Jitter
 - Miss rate
 - etc.
+
+# Architecture Significant Requirements (ASR)
+This kind of requirement has a profound effect on architecture. ASR can be collected from FR, NFR, Interviewing Stakeholders, by understanding Business Goals, by conduction Quality Attribute workshops. Based on this document you should create a Utility Tree with ASRs.
