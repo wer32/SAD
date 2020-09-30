@@ -48,3 +48,14 @@ Metrics:
 This kind of requirement has a profound effect on architecture. ASR can be collected from FR, NFR, Interviewing Stakeholders, by understanding Business Goals, by conduction Quality Attribute workshops. Based on this document you should create a Utility Tree with ASRs.
 ![Image of UtilityTree](UtilityTree.jpg)
 [Utility Tree gathering process in details](https://arnon.me/2010/05/utility-trees-hatching-quality-attributes)
+
+# Current Architecture
+This part must be implemented after you have all requirements and you have already analyzed them. This phase consists of the parts:
+- High-level solution structure
+- Structure of the solution components and their technology stacks
+- High-level deployment approach
+- Solution cross-cutting concerns
+
+High-level solution structure - SEI has the recommendation to document it with one or multiple the next views: Module style, Component-and-connector style, Allocation style, Combined-style, and any other notations
+
+Module style diagram [source](https://www.researchgate.net/figure/Module-Diagram-of-the-System_fig2_331662435)
