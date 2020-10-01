@@ -4,6 +4,7 @@ There is no good or bad solution architecture in general. Architecture can just 
 The goal is to convert all Functional Requirements (FR), NFR, Constraints, Assumptions to Quality Attributes. More importantly, you should define measurable metrics for those quality attributes.
 
 A quality attribute is a measurable or testable property of the system that is used to indicate how well the system satisfies the needs of its stakeholders.
+
 |                  |Microsoft           |Len Bass, Raul Clements, Rick Kazman    |
 |------------------|--------------------|----------------------------------------|
 |                  |                    |                                        |
@@ -46,7 +47,7 @@ Metrics:
 
 # Architecture Significant Requirements (ASR)
 This kind of requirement has a profound effect on architecture. ASR can be collected from FR, NFR, Interviewing Stakeholders, by understanding Business Goals, by conduction Quality Attribute workshops. Based on this document you should create a Utility Tree with ASRs.
-![Image of UtilityTree](UtilityTree.jpg)
+![Image of UtilityTree](images/UtilityTree.jpg)
 [Utility Tree gathering process in details](https://arnon.me/2010/05/utility-trees-hatching-quality-attributes)
 
 # Current Architecture
@@ -56,6 +57,82 @@ This part must be implemented after you have all requirements and you have alrea
 - High-level deployment approach
 - Solution cross-cutting concerns
 
-High-level solution structure - SEI has the recommendation to document it with one or multiple the next views: Module style, Component-and-connector style, Allocation style, Combined-style, and any other notations
+#### High-level solution structure
+SEI has the recommendation to document it with one or multiple the next views: Module style, Component-and-connector style, Allocation style, Combined-style, and any other notations
 
-Module style diagram [source](https://www.researchgate.net/figure/Module-Diagram-of-the-System_fig2_331662435)
+###### module style diagram [source](https://www.researchgate.net/figure/Module-Diagram-of-the-System_fig2_331662435)
+
+![Image of UtilityTree](images/Module-Diagram-of-the-System.png)
+
+###### Component-and-connectors style diagram [source](https://www.uml-diagrams.org/component-diagrams.html)
+
+![Image of UtilityTree](images/component-diagram-overview.png)
+
+###### Allocation style diagram [source](https://www.researchgate.net/figure/Example-Function-Allocation-FA-Diagram_fig1_301351430)
+
+![Image of UtilityTree](images/Example-Function-Allocation-FA-Diagram.png)
+
+#### Structure of the solution components and their technology stacks
+Can be represented as a table under a component diagram with the list of components and technology stack used for those components
+
+|Description                    |Linux application running on a server that ... bla bla       |
+|-------------------------------|-------------------------------------------------------------|
+|Technology stack               |Flutter Dart                                                 |
+|Related Components             |Database                                                     |
+|Covered functional requirements|Shows users list                                             |
+|Notes                          |                                                             |
+
+#### High-level deployment approach
+It might be implemented in different ways.
+For instance, the deployment plan outlines the scope, approach, and execution planned for the deployment of the project deliverables.
+ The plan includes, where relevant, information about system support, issue tracking, escalation processes, roles, and responsibilities before, during, and after deployment.
+It can also be described with a deployment diagram.
+
+[source](https://en.wikipedia.org/wiki/Deployment_diagram#/media/File:Deployment_Diagram.PNG)
+![Deployment diagram](images/Deployment_Diagram.PNG)
+
+#### Solution cross-cutting concerns
+cross-cutting concerns are aspects of a program that affect other concerns.
+These concerns often cannot be cleanly decomposed from the rest of the system in both the design and implementation, and can result in either scattering (code duplication), tangling (significant dependencies between systems), or both.
+
+For instance, if writing an application for handling medical records, the indexing of such records is a core concern, while logging a history of changes to the record database or user database, or an authentication system, would be cross-cutting concerns since they interact with more parts of the program.
+
+//todo add more cross-cutting concerns types
+
+Examples of concerns that tend to be cross-cutting include:
+- Availability
+- Audition
+- Business rules
+- Caching
+- Code mobility
+- Data validation
+- Domain-specific optimizations
+- Error detection and correction
+- Internationalization and localization which includes Language localisation
+- Information security
+- Logging
+- Memory management
+- Metrics
+- Monitoring
+- Persistence
+- Product features
+- Real-time constraints
+- Synchronization
+- Security
+- Transaction processing
+- Context-sensitive help
+
+## Views
+SEI recommends using different views for different stakeholders.
+For simplicity, you can create a table with a list of stakeholders and diagram view for them.
+
+//todo add more views and examples
+
+|Stakeholder                    |Module view         |Components and connectors | Allocation views     |
+|-------------------------------|--------------------|--------------------------|----------------------|
+|Product owner                  |Decompositions View |N/A                       | Deployment View      |
+|Maintenance engineer           |Decompositions View |N/A                       | Deployment View      |
+|End User                       |Shows users list    |N/A                       | N/A                  |
+|Developer                      |Decompositions View |N/A                       | Deployment View      |
+|QA                             |Decompositions View |N/A                       | Deployment View      |
+|PM                             |N/A                 |N/A                       | Work assignment view |
