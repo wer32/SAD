@@ -1,6 +1,6 @@
 There is no good or bad solution architecture in general. Architecture can just more or less fit for the purpose it was designed for. And if the particular architecture fits a customer needs so we can say that this solution architecture is good. So the bottom line is - you can evaluate solution architecture only in the context of particular declared goals.
 
-# Solution Architecture Quality
+# Solution Architecture Quality Attributes
 The goal is to convert all Functional Requirements (FR), NFR, Constraints, Assumptions to Quality Attributes. More importantly, you should define measurable metrics for those quality attributes.
 
 A quality attribute is a measurable or testable property of the system that is used to indicate how well the system satisfies the needs of its stakeholders.
@@ -45,7 +45,7 @@ Metrics:
 - Miss rate
 - etc.
 
-# Architecture Significant Requirements (ASR)
+# Architecture Significant Requirements
 This kind of requirement has a profound effect on architecture. ASR can be collected from FR, NFR, Interviewing Stakeholders, by understanding Business Goals, by conduction Quality Attribute workshops. Based on this document you should create a Utility Tree with ASRs.
 ![Image of UtilityTree](images/UtilityTree.jpg)
 [Utility Tree gathering process in details](https://arnon.me/2010/05/utility-trees-hatching-quality-attributes)
@@ -58,7 +58,13 @@ This part must be implemented after you have all requirements and you have alrea
 - Solution cross-cutting concerns
 
 #### High-level solution structure
-SEI has the recommendation to document it with one or multiple the next views: Module style, Component-and-connector style, Allocation style, Combined-style, and any other notations
+High-level solution structure - SEI has the recommendation to document it with one or multiple the next views: Module style, Component-and-connector style, Allocation style, Combined-style, and any other notations. 
+This is a high-level map of the solution. The layers can be used for introduction tiers.
+All solution components must be shown: services, applications by nature, data storages, buses, caches and etc.
+
+In a diagram can be described the next:
+- solution components
+- 
 
 ###### module style diagram [source](https://www.researchgate.net/figure/Module-Diagram-of-the-System_fig2_331662435)
 
@@ -71,6 +77,10 @@ SEI has the recommendation to document it with one or multiple the next views: M
 ###### Allocation style diagram [source](https://www.researchgate.net/figure/Example-Function-Allocation-FA-Diagram_fig1_301351430)
 
 ![Image of UtilityTree](images/Example-Function-Allocation-FA-Diagram.png)
+
+###### Combined style diagram [source](https://www.researchgate.net/figure/ALEF-components-overview-three-tiers-architecture-data-application-and-presentation_fig5_283412581)
+ 
+![Image of CombinedStyle](images/combined-style-diagram.png)
 
 #### Structure of the solution components and their technology stacks
 Can be represented as a table under a component diagram with the list of components and technology stack used for those components
@@ -133,6 +143,6 @@ For simplicity, you can create a table with a list of stakeholders and diagram v
 |Product owner                  |Decompositions View |N/A                       | Deployment View      |
 |Maintenance engineer           |Decompositions View |N/A                       | Deployment View      |
 |End User                       |Shows users list    |N/A                       | N/A                  |
-|Developer                      |Decompositions View |N/A                       | Deployment View      |
+|Developer                      |Class View          |Component View            | Deployment View      |
 |QA                             |Decompositions View |N/A                       | Deployment View      |
 |PM                             |N/A                 |N/A                       | Work assignment view |
