@@ -44,7 +44,7 @@ Section Type: Mandatory]
 [Description: This section describes main customer business drivers for architectural work.
 Section Type: Highly recommended]
 
-### 2.4 Scope
+##### 2.4 Scope
 [Description: This section defines the scope of the architectural work.
 Section Type: Mandatory]
 
