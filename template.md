@@ -1,6 +1,6 @@
 #### Contents
 - [1. Executive summary](#1.-executive-summary)
-- [1. Executive summary2](#2.4-scope)
+- [2.4 Scope](#24-scope)
 
 #### 1. Executive summary
 [Description: This is a mostly non-technical summary of the entire Solution Architecture Document (SAD) for customer top management. We recommend creating it based on the sections below. The idea was to prepare a ready-to-use template for this document type.
@@ -44,7 +44,7 @@ Section Type: Mandatory]
 [Description: This section describes main customer business drivers for architectural work.
 Section Type: Highly recommended]
 
-##### 2.4 Scope
+### 2.4 Scope
 [Description: This section defines the scope of the architectural work.
 Section Type: Mandatory]
 
