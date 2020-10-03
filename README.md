@@ -1,6 +1,7 @@
 # Solution Architecture Document - template
 This document contains Solution Architecture Process and Solution Architecture Document as a result artifact.
 
+#### General information
 Basically the SA working process consist of the main phases:
 - [Requirement gathering](requirements.md)
   - [Stakeholders](./requirements.md#stakeholder-list-creating)
@@ -16,6 +17,10 @@ Basically the SA working process consist of the main phases:
 - PoC creating
 - Development
 - Migration
+
+#### SAD template
+The solution architecture document template can be copied to a documentation system like Confluence, Docx, wiki and be modified as per need.
+The template can be found [here](template.md).
 
 ##### Recommended links/books
 
