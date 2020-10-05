@@ -5,28 +5,31 @@ The goal is to convert all Functional Requirements (FR), NFR, Constraints, Assum
 
 A quality attribute is a measurable or testable property of the system that is used to indicate how well the system satisfies the needs of its stakeholders.
 
-|                  |Microsoft           |Len Bass, Raul Clements, Rick Kazman    |
-|------------------|--------------------|----------------------------------------|
-|                  |                    |                                        |
-|Design Qualitites |Conceptual Integrity|Conceptual Integrity                    |
-|                  |Maintanability      |Maintanability, Variability, Portability|
-|                  |Reusability         |                                        |
-|                  |                    |                                        |
-|Run-time Qualities|Availability        |Availability                            |
-|                  |Managebility        |Monitorability                          |
-|                  |Performance         |Performance                             |
-|                  |Reliability         |Reliability.                            |
-|                  |Scalability         |Scalability                             |
-|                  |Security            |Security                                |
-|                  |                    |                                        |
-|System Qualities  |Supportability      |                                        |
-|                  |                    |Development Distributability            |
-|                  |                    |Deployability                           |
-|                  |                    |Mobility                                |
-|                  |Testability         |Testability                             |
-|                  |                    |                                        |
-|User Qualities    |Usability           |Usability                               |
-|                  |                    |Safety                                  |
+|Category          |Microsoft           |Len Bass, Raul Clements, Rick Kazman    |Measurable metrics (the list need to be updated)       |
+|------------------|--------------------|----------------------------------------|-------------------------------------------------------|
+|                  |                    |                                        |                                                       |
+|Design Qualitites |Conceptual Integrity|Conceptual Integrity                    |[Conceptual Integrity metrics](conceptual-integrity.md)|
+|                  |Maintanability      |Maintanability, Variability, Portability|[Maintainability metrics](maintainability.md)          |
+|                  |Reusability         |                                        |[Re-usability metrics](re-usability.md)                |
+|                  |                    |                                        |                  |
+|Run-time Qualities|Availability        |Availability                            |                  |
+|                  |Managebility        |Monitorability                          |                  |
+|                  |Interoperability    |Interoperability                        |                  |
+|                  |Performance         |Performance                             |                  |
+|                  |Reliability         |Reliability.                            |                  |
+|                  |Scalability         |Scalability                             |                  |
+|                  |Security            |Security                                |                  |
+|                  |                    |                                        |                  |
+|System Qualities  |Supportability      |                                        |                  |
+|                  |                    |Development Distributability            |                  |
+|                  |                    |Deployability                           |                  |
+|                  |                    |Mobility                                |                  |
+|                  |Testability         |Testability                             |                  |
+|                  |Auditability        |Auditability                            |                  |
+|                  |                    |                                        |                  |
+|User Qualities    |Usability           |Usability                               |                  |
+|                  |                    |Safety                                  |                  |
+|                  |Accessibility       |Accessibility                           |                  |
 
 Example: measure Availability - It the proportion of time that the system is functional and working (a percentage of the total system downtime over a predefined period).
 Metrics:
