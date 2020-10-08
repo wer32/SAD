@@ -1,9 +1,11 @@
 # Maintainability
 
-[Local copy of Detailed clarification](docs/Software%20Metrics%20for%20Predicting%20Maintainability.pdf) ->
+[Local copy of Detailed clarification](../docs/Software%20Metrics%20for%20Predicting%20Maintainability.pdf) ->
 [Source](http://www.dmi.usherb.ca/~frappier/Papers/tm2.pdf)
 
 Maintainability is defined as the ease with which a system can be maintained.
+Maintainability is the ability of the system to undergo changes with a degree of ease.
+These changes can impact components, services, features, and interfaces when adding or changing the functionality, fixing errors, and meeting new business requirements.
 It is an internal attribute of the system which cannot be measured directly.
 Instead, one can measure maintenance process attributes, such as the time required to make a change, which are influenced by software maintainability.
 Since we are interested to evaluate maintainability during development and at delivery time, these maintenance process measures are available too late.
@@ -28,11 +30,11 @@ A solution to this problem is to build models to predict the maintenance process
   Types where TypeCe > 50 are types that depends on too many other types.
 ### Additional metrics
 - Module coupling - a measure of the strength of the relationships between modules.
-  [Table](docs/Software%20Metrics%20for%20Predicting%20Maintainability.pdf) from the reference document can be used.
+  [Table](../docs/Software%20Metrics%20for%20Predicting%20Maintainability.pdf) from the reference document can be used.
 - Module Strength - a measure of how strongly related are the elements within a module.
   Maintainability increases with module strength.
   The design goal is to have modules with informational or functional strength.
-  [Table](docs/Software%20Metrics%20for%20Predicting%20Maintainability.pdf) from the reference document can be used.
+  [Table](../docs/Software%20Metrics%20for%20Predicting%20Maintainability.pdf) from the reference document can be used.
 - A measure of intermodule and intramodule complexity of a system based on fan-out, number of modules and input/output variables. The metric is simple.
   Of the five information flow metrics, it was validated with the largest industrial experiment, showing good correlation with the number of faults.
 - Cocomo Inspired Metric - The effort adjustment factor is the product of fifteen factors, which are divided into four categories: product attributes, computer attributes, personnel attributes, and project attributes.
@@ -40,7 +42,7 @@ A solution to this problem is to build models to predict the maintenance process
   If the value is greater than 1, we predict a high cost of maintenance; if it is smaller, we predict a low cost.
 - Type size. How many lines of code are in type definition file. Recommended threshold value: 200
 
-### General metrics:
+### Examples
 - Cyclomatic complexity <= 20
 - Type size <= 200 lines of code
 - Percentage of comments: >20% and < 40%

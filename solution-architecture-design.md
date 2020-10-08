@@ -5,16 +5,16 @@ The goal is to convert all Functional Requirements (FR), NFR, Constraints, Assum
 
 A quality attribute is a measurable or testable property of the system that is used to indicate how well the system satisfies the needs of its stakeholders.
 
-|Category          |Microsoft           |Len Bass, Raul Clements, Rick Kazman    |Measurable metrics (the list need to be updated)       |
-|------------------|--------------------|----------------------------------------|-------------------------------------------------------|
-|                  |                    |                                        |                                                       |
-|Design Qualitites |Conceptual Integrity|Conceptual Integrity                    |[Conceptual Integrity metrics](conceptual-integrity.md)|
-|                  |Maintanability      |Maintanability, Variability, Portability|[Maintainability metrics](maintainability.md)          |
-|                  |Reusability         |                                        |[Re-usability metrics](re-usability.md)                |
-|                  |                    |                                        |                  |
-|Run-time Qualities|Availability        |Availability                            |                  |
-|                  |Managebility        |Monitorability                          |                  |
-|                  |Interoperability    |Interoperability                        |                  |
+|Category          |Microsoft           |Len Bass, Raul Clements, Rick Kazman    |Measurable metrics (the list need to be updated)               |
+|------------------|--------------------|----------------------------------------|---------------------------------------------------------------|
+|                  |                    |                                        |                                                               |
+|Design Qualitites |Conceptual Integrity|Conceptual Integrity                    |[Conceptual Integrity metrics](metrics/conceptual-integrity.md)|
+|                  |Maintanability      |Maintanability, Variability, Portability|[Maintainability metrics](metrics/maintainability.md)          |
+|                  |Reusability         |                                        |[Re-usability metrics](metrics/re-usability.md)                |
+|                  |                    |                                        |                                                               |
+|Run-time Qualities|Availability        |Availability                            |[Availability metrics](metrics/availability.md)                |
+|                  |Managebility        |Monitorability                          |[Manageability metrics](metrics/managebility.md)               |
+|                  |Interoperability    |Interoperability                        |[Interoperability metrics](metrics/interoperability.md)        |
 |                  |Performance         |Performance                             |                  |
 |                  |Reliability         |Reliability.                            |                  |
 |                  |Scalability         |Scalability                             |                  |

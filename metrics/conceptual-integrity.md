@@ -12,7 +12,7 @@ are designed, etc.
   High efferent coupling indicates that the concerned assembly is dependent.
   Notice that types declared in third-party assemblies are taken into account.
   
-# General Metrics
+# Examples
 - Efferent coupling (Ce): < 0.2 (deprecated metric in sonar)
 - Afferent coupling (Ca): < 0.2 (Package Tangle in Sonar Qube) 
 
