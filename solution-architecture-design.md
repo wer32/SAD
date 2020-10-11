@@ -15,21 +15,21 @@ A quality attribute is a measurable or testable property of the system that is u
 |Run-time Qualities|Availability        |Availability                            |[Availability metrics](metrics/availability.md)                |
 |                  |Managebility        |Monitorability                          |[Manageability metrics](metrics/managebility.md)               |
 |                  |Interoperability    |Interoperability                        |[Interoperability metrics](metrics/interoperability.md)        |
-|                  |Performance         |Performance                             |                  |
-|                  |Reliability         |Reliability.                            |                  |
-|                  |Scalability         |Scalability                             |                  |
-|                  |Security            |Security                                |                  |
-|                  |                    |                                        |                  |
-|System Qualities  |Supportability      |                                        |                  |
-|                  |                    |Development Distributability            |                  |
-|                  |                    |Deployability                           |                  |
-|                  |                    |Mobility                                |                  |
-|                  |Testability         |Testability                             |                  |
-|                  |Auditability        |Auditability                            |                  |
-|                  |                    |                                        |                  |
-|User Qualities    |Usability           |Usability                               |                  |
-|                  |                    |Safety                                  |                  |
-|                  |Accessibility       |Accessibility                           |                  |
+|                  |Performance         |Performance                             |[Performance metrics](metrics/performance.md)                  |
+|                  |Reliability         |Reliability.                            |[Reliability metrics](metrics/reliability.md)                  |
+|                  |Scalability         |Scalability                             |[Scalability metrics](metrics/scalability.md)                  |
+|                  |Security            |Security                                |[Security metrics](metrics/security.md)                        |
+|                  |                    |                                        |                                                               |
+|System Qualities  |Supportability      |                                        |[Supportability metrics](metrics/supportability.md)            |
+|                  |                    |Development Distributability            |                                                               |
+|                  |                    |Deployability                           |                                                               |
+|                  |                    |Mobility                                |                                                               |
+|                  |Testability         |Testability                             |[Testability metrics](metrics/testability.md)                  |
+|                  |Auditability        |Auditability                            |[Auditability metrics](metrics/auditability.md)                |
+|                  |                    |                                        |                                                               |
+|User Qualities    |Usability           |Usability                               |[Usability metrics](metrics/usability.md)                      |
+|                  |                    |Safety                                  |                                                               |
+|                  |Accessibility       |Accessibility                           |[Accessibility metrics](metrics/accessibility.md)              |
 
 Example: measure Availability - It the proportion of time that the system is functional and working (a percentage of the total system downtime over a predefined period).
 Metrics:
