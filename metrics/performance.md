@@ -13,3 +13,7 @@ Throughput is the number of events that take place within a given amount of time
 - Number of records/documents/ etc in data storages: # of records/documents/etc
 - Mean time of page load (for web applications): ms
 - Mean time of function call (for web services): ms
+- Latency (time take to respond to any event)
+- Throughput (number of events that take place within a given amount of time)
+- Jitter
+- Miss rate

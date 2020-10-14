@@ -14,6 +14,12 @@
   - [3.3 Non-functional Requirements](#33-non-functional-requirements)
   - [3.4 Constraints](#34-constraints)
   - [3.5 Assumptions](#35-assumptions)
+- [4 Quality Attributes(ASR)](#4-quality-attributes)
+- [5 Baseline Architecture](#4-quality-attributes)
+  - [5.1 High-level Solution Structure ](#51-high-level-solution-structure)
+    - [5.1.1 Solution Component 1 ](#511-solution-component-1)
+    - [5.1.2 Solution Component 2 ](#512-solution-component-2)
+  - [5.2 High-level Solution Structure ](#51-high-level-solution-structure)
 
 ### 1. Executive summary
 [Description: This is a mostly non-technical summary of the entire Solution Architecture Document (SAD) for customer top management.
@@ -174,10 +180,84 @@ Best practices for it can be found [here](https://www.youtube.com/watch?v=YGeqqY
 
 Section Type: Mandatory]
 
-|Priority|Quality attribute|Measurable metric|
+|Priority|Quality attribute   |Measurable metric                                              |
+|--------|--------------------|---------------------------------------------------------------|
+|        |Conceptual Integrity|[Conceptual Integrity metrics](metrics/conceptual-integrity.md)|
+|        |Maintanability      |[Maintainability metrics](metrics/maintainability.md)          |
+|        |Reusability         |[Re-usability metrics](metrics/re-usability.md)                |
+|        |Availability        |[Availability metrics](metrics/availability.md)                |
+|        |Managebility        |[Manageability metrics](metrics/managebility.md)               |
+|        |Interoperability    |[Interoperability metrics](metrics/interoperability.md)        |
+|        |Performance         |[Performance metrics](metrics/performance.md)                  |
+|        |Reliability         |[Reliability metrics](metrics/reliability.md)                  |
+|        |Scalability         |[Scalability metrics](metrics/scalability.md)                  |
+|        |Supportability      |[Supportability metrics](metrics/supportability.md)            |
+|        |Testability         |[Testability metrics](metrics/testability.md)                  |
+|        |Auditability        |[Auditability metrics](metrics/auditability.md)                |
+|        |Usability           |[Usability metrics](metrics/usability.md)                      |
+|        |Accessibility       |[Accessibility metrics](metrics/accessibility.md)              |
 
+### 5 Baseline Architecture
+[Description: This section must be addressed only if you are working in a “brown field”, where the customer already has
+a legacy solution. This section describes the legacy solution architecture with a sufficient level of detail.
+Note: In some cases it makes sense to have Baseline Solution Architecture (also known as putting the solution
+architecture “AS IS” in a separate document.
 
+Section Type: Mandatory (if legacy solution is to be re-worked and migrated)]
 
+#### 5.1 High-level Solution Structure 
+[Description: This section describes (in the context of the whole IT landscape):
+- Set of solution components
+- Integration of solution components
+- High-level architectural styles used in the solution architecture
+Include the following things in this section:
+- High-level solution diagram
+- High-level description of solution behavior (in terms of sequences, state-machine, data flow and execution diagrams)
+- Comments about used architectural styles
+- List of architecturally significant components and descriptions of their technology stack and integration with each
+  other
+
+Section Type: Mandatory (if legacy solution is to be re-worked and migrated)]
+ 
+##### 5.1.1 Solution Component 1
+|                                |                                                                                             |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+|Description                     |[Describe the general purpose of the component in the system]                                |
+|Technology Stack                |[Describe the technology stack of the component by listing main frameworks, libraries, tools]|
+|Related components              |[List related components with a short description of the relation nature]                    |
+|Covered functional requirements |[List covered functional requirements]                                                       |
+|Notes                           |[Put any additional specific notes here]                                                     |
+
+##### 5.1.2 Solution Component 2
+|                                |                                                                                             |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+|Description                     |[Describe the general purpose of the component in the system]                                |
+|Technology Stack                |[Describe the technology stack of the component by listing main frameworks, libraries, tools]|
+|Related components              |[List related components with a short description of the relation nature]                    |
+|Covered functional requirements |[List covered functional requirements]                                                       |
+|Notes                           |[Put any additional specific notes here]                                                     |
+
+#### 5.2 SOLUTION COMPONENTS STRUCTURE
+[Description: This section describes the internal structure of architecturally significant components.
+
+For every solution component, describe the following things:
+- Diagram of sub-components
+- Description of the sub-components’ behavior (in terms of sequences, state-machine, data flow and execution diagrams)
+- Sub-component integration
+
+Section Type: Mandatory (if legacy solution is to be re-worked and migrated)]
+
+##### 5.2.1 Solution Component 1
+ [Describe main sub-components in this section: 
+ - Sub-component contract
+ - Sub-component diagram
+ - Sub-component relations/dependencies]
+
+##### 5.2.2 Solution Component 2
+ [Describe main sub-components in this section: 
+ - Sub-component contract
+ - Sub-component diagram
+ - Sub-component relations/dependencies]
 
 
 
