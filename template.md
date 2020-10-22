@@ -14,12 +14,47 @@
   - [3.3 Non-functional Requirements](#33-non-functional-requirements)
   - [3.4 Constraints](#34-constraints)
   - [3.5 Assumptions](#35-assumptions)
+  - [3.6 Risks](#36-risks)
 - [4 Quality Attributes(ASR)](#4-quality-attributes)
-- [5 Baseline Architecture](#4-quality-attributes)
-  - [5.1 High-level Solution Structure ](#51-high-level-solution-structure)
-    - [5.1.1 Solution Component 1 ](#511-solution-component-1)
-    - [5.1.2 Solution Component 2 ](#512-solution-component-2)
-  - [5.2 High-level Solution Structure ](#51-high-level-solution-structure)
+- [5 Baseline Solution Architecture](#5-baseline-solution-architecture)
+  - [5.1 High-level Solution Structure](#51-high-level-solution-structure)
+    - [5.1.1 Solution Component 1](#511-solution-component-1)
+    - [5.1.2 Solution Component 2](#512-solution-component-2)
+  - [5.2 Solution Component structure](#52-solution-components-structure)
+    - [5.2.1 Solution Component 1](#521-solution-component-1)
+    - [5.2.2 Solution Component 2](#522-solution-component-2)
+  - [5.3 Domain model](#53-domain-model)
+  - [5.4 Data model](#54-data-model)
+    - [5.4.1 Storage-1](#541-storage-1)
+    - [5.4.2 Storage-2](#542-storage-2)
+  - [5.5 High-level Deployment Approach](#55-high-level-deployment-approach)
+  - [5.6 Architecturally Significant Quality Attributes](#56-architecturally-significant-quality-attributes)
+    - [5.6.1 Security](#561-security)
+    - [5.6.2 Supportability](#562-supportability)
+      - [5.6.2.1 Monitoring](#5621-monitoring)
+      - [5.6.2.2 Administration Tools](#5622-administration-tools)
+      - [5.6.2.3 Specific deployment aspects](#5623-specific-deployment-aspects)
+- [6 Target Solution Architecture](#6-target-solution-architecture)
+  - [6.1 Risks](#61-risks)
+  - [6.2 Dependencies](#62-dependencies)
+  - [6.3 Assumptions](#63-assumptions)
+  - [6.4 High-level Solution Structure](#64-high-level-solution-structure)
+    - [6.4.1 Solution Component 1](#641-solution-component-1)
+    - [6.4.2 Solution Component 2](#642-solution-component-2)
+  - [6.5 Solution Component structure](#52-solution-components-structure)
+    - [6.5.1 Solution Component 1](#651-solution-component-1)
+    - [6.5.2 Solution Component 2](#652-solution-component-2)
+  - [6.6 Domain model](#66-domain-model)
+  - [6.7 Data model](#67-data-model)
+    - [6.7.1 Storage-1](#671-storage-1)
+    - [6.7.2 Storage-2](#672-storage-2)
+  - [6.8 High-level Deployment Approach](#68-high-level-deployment-approach)
+  - [6.9 Architecturally Significant Quality Attributes](#69-architecturally-significant-quality-attributes)
+    - [6.9.1 Security](#691-security)
+    - [6.9.2 Supportability](#692-supportability)
+      - [6.9.2.1 Monitoring](#6921-monitoring)
+      - [6.9.2.2 Administration Tools](#6922-administration-tools)
+      - [6.9.2.3 Specific deployment aspects](#6923-specific-deployment-aspects)
 
 ### 1. Executive summary
 [Description: This is a mostly non-technical summary of the entire Solution Architecture Document (SAD) for customer top management.
@@ -161,6 +196,12 @@ This is critical to do in order to cover all the gaps in the requirements.
 
 Section Type: Mandatory (if section is not covered with available documentation)]
 
+#### 3.6 Risks
+[Description: This section lists potential risks related to the target solution architecture or solution migration to
+target solution architecture.
+
+Section Type: Highly recommended]
+
 ### 4 Quality Attributes
 [Description: Select 3-5 most important quality attributes for the future solution architecture based on the requirements because your architectural decisions will depend on them.
 Provide motivation for selecting every quality attribute.
@@ -197,7 +238,7 @@ Section Type: Mandatory]
 |        |Usability           |[Usability metrics](metrics/usability.md)                      |
 |        |Accessibility       |[Accessibility metrics](metrics/accessibility.md)              |
 
-### 5 Baseline Architecture
+### 5 Baseline Solution Architecture
 [Description: This section must be addressed only if you are working in a “brown field”, where the customer already has
 a legacy solution. This section describes the legacy solution architecture with a sufficient level of detail.
 Note: In some cases it makes sense to have Baseline Solution Architecture (also known as putting the solution
@@ -259,7 +300,223 @@ Section Type: Mandatory (if legacy solution is to be re-worked and migrated)]
  - Sub-component diagram
  - Sub-component relations/dependencies]
 
+#### 5.3 Domain model
+[Description: This section describes the domain model if Domain-Driven Design was used during baseline solution design.
+Describe the domain model in terms of bounded contexts and the main entities in every context.
 
+Section Type: Optional (if applicable)]
+
+#### 5.4 Data Model 
+[Description: This section describes the approach to data storage and data models.
+List data storage components of any nature, relational and non-relational, with data model diagrams for each storage.
+
+Section Type: Highly recommended (if applicable)]
+
+##### 5.4.1 Storage 1
+[This section describes the data storage technology stack and the used data model with data model diagrams.]
+
+##### 5.4.2 Storage 2
+[This section describes the data storage technology stack and the used data model with data model diagrams.]
+
+#### 5.5 High-level Deployment Approach
+[Description: This section describes the high-level deployment approach to all required environments
+(development, staging, production, etc.). This is a blueprint in high-level detail without specific physical parameters
+of hardware and so on.
+
+Section Type: Mandatory (if legacy solution is to be re-worked and migrated)]
+
+#### 5.6 Architecturally Significant Quality Attributes
+
+##### 5.6.1 Security
+[Description: Possible focus areas to consider in this section:
+- Customer security policies
+- Authorization/authentication
+- Communication encryption
+- Encryption of stored data
+- Personal data management
+- Deployment security
+- Etc.
+
+Section Type: Recommended (if legacy solution is to be re-worked and migrated)]
+
+##### 5.6.2 Supportability
+
+###### 5.6.2.1 Monitoring 
+[Description: Describe the approach to solution support here. Consider the following aspects:
+- Logging
+- Performance counters/metrics
+- Monitoring tools
+- Solution component availability
+- Etc.
+
+Section Type: Recommended (if legacy solution is to be re-worked and migrated)] 
+
+###### 5.6.2.2 Administration Tools
+
+###### 5.6.2.3 Specific deployment aspects 
+[Description: For example, complex database deployment]
+[Notice: Note that you must consider the migration process, risks, issues, and so on if you have a legacy solution
+to migrate to the new architecture. In this case, you need to design the new solution having this legacy architecture
+in mind.
+
+Section Type: Optional]
+
+### 6 Target Solution Architecture
+[Description: This section describes the proposed target solution architecture (also known as solution architecture
+“to be”).
+
+Section Type: Mandatory] 
+
+#### 6.1 Risks
+[Description: This section lists potential risks related to the target solution architecture or solution migration to
+target solution architecture.
+
+Section Type: Highly recommended]
+
+#### 6.2 Dependencies
+[Description: This section lists dependencies related to the target solution architecture or solution migration to
+target solution architecture.
+
+Section Type: Highly recommended]
+
+#### 6.3 Assumptions
+[Description: This section lists assumptions related to the target solution architecture or solution migration to
+target solution architecture. 
+
+Section Type: Highly recommended]
+
+#### 6.4 High-level Solution Structure 
+[Description: This section describes (in the context of the whole IT landscape):
+- Set of solution components
+- Integration of solution components
+- High-level architectural styles used in the solution architecture
+Include the following things in this section:
+- High-level solution diagram
+- High-level description of solution behavior (in terms of sequences, state-machine, data flow and execution diagrams)
+- Comments about used architectural styles
+- List of architecturally significant components and descriptions of their technology stack and integration with each
+  other
+
+Section Type: Mandatory (if legacy solution is to be re-worked and migrated)]
+ 
+##### 6.4.1 Solution Component 1
+|                                |                                                                                             |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+|Description                     |[Describe the general purpose of the component in the system]                                |
+|Technology Stack                |[Describe the technology stack of the component by listing main frameworks, libraries, tools]|
+|Related components              |[List related components with a short description of the relation nature]                    |
+|Covered functional requirements |[List covered functional requirements]                                                       |
+|Notes                           |[Put any additional specific notes here]                                                     |
+
+##### 6.4.2 Solution Component 2
+|                                |                                                                                             |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+|Description                     |[Describe the general purpose of the component in the system]                                |
+|Technology Stack                |[Describe the technology stack of the component by listing main frameworks, libraries, tools]|
+|Related components              |[List related components with a short description of the relation nature]                    |
+|Covered functional requirements |[List covered functional requirements]                                                       |
+|Notes                           |[Put any additional specific notes here]                                                     |
+
+#### 6.5 SOLUTION COMPONENTS STRUCTURE
+[Description: This section describes the internal structure of architecturally significant components.
+
+For every solution component, describe the following things:
+- Diagram of sub-components
+- Description of the sub-components’ behavior (in terms of sequences, state-machine, data flow and execution diagrams)
+- Sub-component integration
+
+Section Type: Mandatory (if legacy solution is to be re-worked and migrated)]
+
+##### 6.5.1 Solution Component 1
+ [Describe main sub-components in this section: 
+ - Sub-component contract
+ - Sub-component diagram
+ - Sub-component relations/dependencies]
+
+##### 6.5.2 Solution Component 2
+ [Describe main sub-components in this section: 
+ - Sub-component contract
+ - Sub-component diagram
+ - Sub-component relations/dependencies]
+
+#### 6.6 Domain model
+[Description: This section describes the domain model if Domain-Driven Design was used during baseline solution design.
+Describe the domain model in terms of bounded contexts and the main entities in every context.
+
+Section Type: Optional (if applicable)]
+
+#### 6.7 Data Model 
+[Description: This section describes the approach to data storage and data models.
+List data storage components of any nature, relational and non-relational, with data model diagrams for each storage.
+
+Section Type: Highly recommended (if applicable)]
+
+##### 6.7.1 Storage 1
+[This section describes the data storage technology stack and the used data model with data model diagrams.]
+
+##### 6.7.2 Storage 2
+[This section describes the data storage technology stack and the used data model with data model diagrams.]
+
+#### 6.8 High-level Deployment Approach
+[Description: This section describes the high-level deployment approach to all required environments
+(development, staging, production, etc.). This is a blueprint in high-level detail without specific physical parameters
+of hardware and so on.
+
+Section Type: Mandatory (if legacy solution is to be re-worked and migrated)]
+
+#### 6.9 Architecturally Significant Quality Attributes
+
+##### 6.9.1 Security
+[Description: Possible focus areas to consider in this section:
+- Customer security policies
+- Authorization/authentication
+- Communication encryption
+- Encryption of stored data
+- Personal data management
+- Deployment security
+- Etc.
+
+Section Type: Recommended (if legacy solution is to be re-worked and migrated)]
+
+##### 6.9.2 Supportability
+
+###### 6.9.2.1 Monitoring 
+[Description: Describe the approach to solution support here. Consider the following aspects:
+- Logging
+- Performance counters/metrics
+- Monitoring tools
+- Solution component availability
+- Etc.
+
+Section Type: Recommended (if legacy solution is to be re-worked and migrated)] 
+
+###### 6.9.2.2 Administration Tools
+
+###### 6.9.2.3 Specific deployment aspects 
+[Description: For example, complex database deployment]
+[Notice: Note that you must consider the migration process, risks, issues, and so on if you have a legacy solution
+to migrate to the new architecture. In this case, you need to design the new solution having this legacy architecture
+in mind.
+
+Section Type: Optional]
+
+### 7 Transition
+[Description: This section describes the approach to migration and compatibility (applicable in the case of
+“brown field”, when you need to migrate the customer smoothly from a legacy solution to a new one,
+including customer data.
+
+It is recommended to provide the customer with a set of high-level transition architectures (if applicable).
+Also, it is recommended to describe:
+- General approach to backward/forward compatibility (if applicable)
+- General approach to data compatibility
+- General approach to interface compatibility
+- Component-by-component migration description
+- Migration scenario and data migration should be described (physical view)
+- Deployment windows and how deployment affects availability
+- Level of support needed from others (operations, 3rd-party vendors, etc.)
+- Etc.
+
+Section Type: Mandatory (if migration from legacy solution must be done)]
 
 
 
